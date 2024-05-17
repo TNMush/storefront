@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #any route that starts with playground/ should be handled by the playground urls.py file
     path('playground/', include("playground.urls")),
+    path("__debug__/", include("debug_toolbar.urls")),
 ]
